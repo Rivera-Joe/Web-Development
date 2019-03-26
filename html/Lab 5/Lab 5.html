@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Lab 5</title>
+<script>
+//part 1
+
+function printTitle(part){
+document.write("<h3>Part" + part + "</h3>");}
+printTitle(1);
+function enter(){
+document.write("<br /><br />");}
+
+
+function stripstring(sentence){
+
+enter();
+var removed = sentence.substr(-9);
+var altered = sentence.replace(removed, "");
+document.write(altered);}
+
+var input = "Studying is a contraction for the term, student dying to Learn";
+enter();
+document.write(input);
+enter();
+
+stripstring(input);
+enter();
+</script>
+<script>
+//part 2
+printTitle(2);
+var newSent = "Learning string functions is a terrific educational experience.";
+document.write(newSent);
+enter();
+function uppercase(newSent){
+var sWordArray = newSent.split(" "); 
+
+
+
+for( var i of sWordArray){
+var word = i.toString();
+var firstLetter = word.substr(0,1);
+var capFL = firstLetter.toUpperCase();
+var change = word.replace(firstLetter, capFL) + " ";
+document.write(change);
+}
+delete sWordArray;
+
+
+}
+uppercase(newSent);
+
+
+
+</script>
+<script>
+//part 3
+printTitle(3);
+
+function wrangleArray(){
+var sentence = "JavaScript is a really cool language";
+var newSentence = "";
+//Write it out
+document.getElementById("div1").innerHTML = "<p>" + sentence + "</p>";
+//Convert to an array
+var words = sentence.split(" ");
+//Remove 'really' and 'cool', and add 'powerful' instead
+var message = words.splice(3, 2, "powerful");
+//use an alert to say what words were removed
+alert('Removed words: ' + message);
+//Convert the array to a string, and write it out
+document.getElementById("div2").innerHTML = "<p>" + words.join(" ") + "</p>";}
+
+</script>
+</head>
+<body>
+<div id = "div1"></div>
+<div id = "div2"></div>
+<script>wrangleArray();</script>
+
+
+
+</body>
+</html>

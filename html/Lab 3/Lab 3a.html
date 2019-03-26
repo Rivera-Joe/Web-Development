@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Lab 3a</title>
+<style type = "text/css">
+@import url("../../styles/Lab 3.css");
+</style>
+</head>
+
+<body>
+<h1>"I love Funtions!"</h1>
+<script type="text/javascript">
+function getAddedText( textpart1, textpart2) // bug 1
+{
+var addedText1 = textpart1 + " " + textpart2;
+return addedText1;}
+
+function printText(){
+var addedText2 = getAddedText("This class is" , "all about functions!"); //bug 2
+document.write(addedText2); // bug 3
+}
+
+var alertText = getAddedText("I feel","smarter already!");
+window.alert(alertText); //bug 4
+printText(); //bug 5
+</script>
+<p style="color: #0000ff">I'm really learning a lot!<br /></p>
+<a href = "Lab 3b.html">Lab 3B</a>
+</body>
+</html>

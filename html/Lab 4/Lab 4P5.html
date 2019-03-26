@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Lab 4 Page 5</title>
+<style>
+body{
+background-color: #000055;
+font-family: "cooper black";
+color: #cccccc;}
+td {
+padding: 0.5em 1em;
+border-style: inset;}
+</style>
+</head>
+<body>
+<h1 style="text-align: center">Object Explorer</h1>
+<table style="margin-left: auto; margin-right: auto">
+<tr>
+<th>Property</th><th>Data Type</th><th>Value</th>
+</tr>
+<script>
+var obj = window.navigator;
+for (var prop in obj){
+document.write("<tr>");
+document.write("<td style=\"text-align:center\">" + prop + "</td>");
+document.write("<td style=\"text-align:center\">" + typeof obj[prop] + "</td>");
+document.write("<td style=\"text-align:center\">" + obj[prop] + "</td>");
+document.write("</tr>");}
+</script>
+</table>
+
+
+
+
+</body>
+</html>

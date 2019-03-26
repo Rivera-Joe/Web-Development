@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Lab 4 Page 1</title>
+<style type = "text/css">
+@import url("../../styles/Lab 4.css");
+</style>
+
+<script src="../../scripts/Lab 4.js">
+</script>
+<script src="../../scripts/dateConvert.js">
+</script>
+</head>
+<body>
+
+<script>
+printTitle();
+
+//confirm box
+var user = confirm("Do you want to go to the San Jac Home Page?");
+if (user == true){
+location.href = 'https://www.sanjac.edu';}
+else{
+alert("Staying on current page");}
+</script>
+
+
+<input type = "button" value = "Next Page" onclick = "location.href = 'Lab 4P2.html'"/>
+
+<script>
+document.write("<br />Today is " + weekday + ".");
+document.write("<br />The month is " + month + ".");
+document.write("<br />The numerical date is " + day + ".");
+document.write("<br />The hour of the day is " + hours + ".");
+document.write("<br />The minutes past the hour is " + minutes + ".");
+document.write("<br />The seconds with the hour is " + seconds + "."); 
+</script>
+
+<h3>Bonus</h3>
+<input type = "button" value = "Random Number" onclick = "printRand(100)"/>
+<p id="rando" style = "color:#ff0000; font-size: 16pt; font-family: verdana;"></p>
+</body>
+</html>

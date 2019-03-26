@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Lab 4 Page 2</title>
+
+<style type = "text/css">
+@import url("../../styles/Lab 4.css");
+</style>
+
+<script src="../../scripts/Lab 4.js">
+</script>
+
+
+</head>
+<body>
+<script>
+printTitle();
+
+//box 1 -- First Name
+var user = new Object();
+user.fname = prompt("Please enter your first name: ", "First Name");
+alert(user.fname);
+
+//box 2 -- Last Name
+user.lname = prompt("Please enter your last name: ", "Last Name");
+alert(user.lname);
+
+//box 3 -- City
+user.city = prompt("Please enter the city in which you live: ", "City");
+alert(user.city);
+
+//box 4 -- State
+user.state = prompt("Please enter the State in which you live: ", "State");
+alert(user.state);
+
+//box 5 -- Zip Code
+user.zipCode = prompt("Please enter your Zip Code: ", "Zip Code");
+alert(user.zipCode);
+
+//box 6 -- Phone Number
+user.pNumber = prompt("Please enter your phone number: ", "Phone Number");
+alert(user.pNumber);
+
+user.food = prompt("What is your favorite food to eat?", "Food");
+user.drink = prompt("What is your favorite drink?" , "Drink");
+user.store = prompt("What is your favorite store to shop at?" , "Store");
+user.movie = prompt("What is your favorite movie?", "Movie");
+alert("Favorite\nFood: " + user.food + "\nDrink " + user.drink + "\nStore: " + user.store + "\nMovie: " + user.movie); 
+</script>
+
+<input type="button" value="Next Page" onclick="location.href='Lab 4P3.html'"/>
+
+
+</body>
+</html>

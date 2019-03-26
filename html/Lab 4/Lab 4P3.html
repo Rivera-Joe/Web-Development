@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Lab 4 Page 3</title>
+<style type="text/css">
+@import url("../../styles/Lab 4.css");
+</style>
+<script src="../../scripts/Lab 4.js"></script>
+</head>
+<body>
+<script>printTitle();</script>
+<p><br /><br /><br /><br /></p>
+<h3 id="1">Welcome to the "switcheroo" commencement page</h3>
+
+<p id="2">Here you will be prompted to input a number for later use</p>
+<p><br /><br /><br /><br /></p>
+
+<h2 id="3">I have a really good idea for the button thing on the next page</h2>
+<p><br /><br /><br /><br /></p>
+
+<div id="4" style="border-style:groove; border-color:#0055ff; border-width:15px; padding: 5px;">
+<p>I plan to run a prompt box from the button click. from there, it will accept user input for a string.</p>
+<p>This string will then be printed out into the content of the id selected.</p>
+</div>
+
+<blockquote id="5">I have never actually used blockquote before. So I had to look up how to use it.<br />
+this would be a good target to change the text for, since this is probably the largest sum of<br />
+text throughout this page. I would change this one!!</blockquote>
+
+<script>
+var choice = prompt("select a number between 1 and 5");
+var element = document.getElementById(choice);
+alert(element);
+</script>
+
+<input type="button" value="Next Page" onclick="location.href='Lab 4P4.html'"/>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Lab 1 Page 3</title>
+
+<style = "text/css">
+@import url("../css/lab1.css");
+</style>
+
+<script type = "text/javascript">
+
+//script written in the head tag
+
+var userName = prompt("What is your first name?", "Name Here");
+alert("You have entered: " + userName);
+
+
+</script>
+</head>
+<body class = "third-page">
+
+<div style ="font-family: helvetica; font-size: 22px; font-weight: bold; color: #2c2c2c;">
+<script type = "text/javascript">
+
+//script written in the body tag
+var d = new Date();
+var day = d.getDate();
+var month = d.getMonth();
+month++;
+var year = d.getFullYear();
+alert("Last modified on: " + document.lastModified);
+document.write("AHHHHHHH This is the last page in the lab o.O <br />");
+document.write("Introducing page 3 of Lab 1 - Created by Joe Rivera on:<br /> " + month + "/" + day + "/" + year);
+document.write("<br />I used a date function on the line above. Hopefully it worked.<br />"); 
+document.write("Last Modified on: " + document.lastModified);
+document.write("<br /><br />On another note, I started reading books again!<br />I started reading a series<br />");
+document.write("that a friend introduced to me. It's called <u>The Dresden Files</u>. The author is <u>Jim Butcher</u>.<br />");
+
+</script>
+</div>
+
+
+
+
+</body>
+</html>

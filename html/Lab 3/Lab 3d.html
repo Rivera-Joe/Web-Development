@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Lab 3 part 4</title>
+<style type = "text/css">
+@import url("../../styles/Lab 3.css");
+</style>
+
+
+</head>
+<body>
+<script>
+var total = 300;
+var interest = 4/100;
+var gTotal = "Total gained outside the function is "+(total+(total*interest)) + "\n";
+function totalGain(){
+
+total = 400;
+var interest = 6/100;
+return "Grand total (inside the function) gained is " + (total+(total*interest)) + "\n";
+}
+var fGtotal = totalGain();
+alert(fGtotal);
+document.write(gTotal);
+</script>
+
+</body>
+</html>

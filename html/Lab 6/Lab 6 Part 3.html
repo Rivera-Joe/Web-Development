@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Lab 6 Part 3</title>
+<style type = "text/css">
+@import url("../../styles/generic.css");
+</style>
+<script src = "../../scripts/Lab 6.js"></script>
+</head>
+
+<body>
+<h1 class = "header">Welcome to Page 3 of Lab 6</h1>
+
+<script>
+weekday();
+</script>
+<p>This page should have a prompt box that asks the user to enter a day of the week.
+If the user enters anything other than a day of the week, such as a random word or a number
+it will issue an alert message and allow the user to try again.</p>
+
+<p>Actually, originally it was only supposed to allow the user to retry if they entered
+a number. But I altered it to allow the user to re-do the prompt if they enter anything
+other than a weekday (for example, the word: shark).</p>
+<p>The button below uses the "go" method from the history object. I would only click it if
+you came from the previous page. If you click it and you loaded this page directly, it will not work.</p>
+
+
+<input type = "button" value = "Previous Page - H" onclick = "history.go(-1)"/>
+
+<p>The button below will take you directly to page 2.</p>
+<input type = "button" value = "Previous Page - L" onclick = "location.href = 'Lab 6 Part 2.html'"/>
+
+
+
+</body>
+</html>

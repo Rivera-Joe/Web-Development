@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Lab 7 redirect page</title>
+<style type = "text/css">
+@import url("../../generic.css");
+</style>
+<script>
+function checkSupport(){
+
+var obj = window.navigator;
+
+if (typeof obj.vibrate == "function" && typeof obj.registerContentHandler == "function"){
+alert("You are using firefox. Sending to firefox page.");
+location.href = "FireFox.html";}
+
+else if (typeof obj.msManipulationViewsEnabled == "boolean" && typeof obj.msSaveOrOpenBlob == "function"){
+alert("You are using Internet Explorer. Sending to IE page.");
+location.href = "internetE.html";}
+
+
+else if(typeof obj.budget == "object" && typeof obj.deviceMemory == "number"){
+alert("You are using Google Chrome. Sending to Chrome page.");
+location.href = "googleC.html";}
+
+else{
+alert("You are using an unknown browser. Consider using IE, FireFox, or Chrome.");
+location.href = "unknown.html";}
+
+
+}
+
+checkSupport();
+</script>
+
+
+</head>
+<body>
+
+
+
+
+
+
+</body>
+</html>

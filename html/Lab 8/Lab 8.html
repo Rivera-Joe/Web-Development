@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Lab 8</title>
+<link rel="shortcut icon" href = "../../Images/New2IFavicon.ico"/>
+</head>
+
+<body>
+
+
+<div id = "myDiv">
+<p> This is the first paragraph tag in the div.</p>
+<p> I will try to loop through this div tag.</p>
+<p> In order to get all of the elements used.</p>
+<p> As well as the text in this div.</p>
+</div>
+<script>
+//first block
+var arrOfPTexts = Array.from(document.querySelectorAll('#myDiv > p'), (p) => p.textContent);
+var text = arrOfPTexts.join(' ');
+
+alert(text);
+</script>
+
+<script>
+//second block
+
+window.onload = function(){
+document.getElementById("btn2").style.visibility = "hidden";
+}
+
+
+var newH1 = document.createElement("h1");
+
+var h1Text = document.createTextNode("This is an H1 tag");
+newH1.appendChild(h1Text);
+
+function showH1(){
+document.body.appendChild(newH1);
+document.getElementById("btn2").style.visibility = "visible";
+
+}
+var newText = document.createTextNode = "This is now a paragraph tag";
+var pTag = document.createElement("p");
+pTag.textContent = newText;
+
+function swap(){
+document.body.replaceChild(pTag, newH1);
+var parentNode = newH1.parentNode;
+
+parentNode.replaceChild(pTag, newH1);
+}
+
+
+
+
+</script>
+
+<input type = "button" id = "btn1" onclick = "showH1()" value = "Show h1"/>
+
+<input type = "button" id = "btn2" onclick = "swap()" value = "swap tags"/>
+
+
+
+</body>
+</html>

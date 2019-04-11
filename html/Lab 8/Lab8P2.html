@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Lab 8 Page 2</title>
+<style>
+body{
+background-color: #c0c0c0;
+color: #550000;
+font-family: "comic sans ms";
+font-size: 22px;
+text-align: center;}
+</style>
+
+
+
+
+<script>
+
+var musiclistObject = {
+	"musiclist": [{"title" : "The Color Before The Sun", "artist" : "Coheed and Cambria"}, 
+				{"title" : "Eye Of The Storm", "artist" : "ONE OK ROCK"},
+				{"title" : "The Afterman: Ascension", "artist" : "Coheed and Cambria"}, 
+				{"title" : "Re: Re:", "artist" : "Asian Kung-Fu Generation"}]}
+				
+//a variable to hold our user message
+var out = "";
+
+//get the array
+var CD = musiclistObject.musiclist;
+
+//loop through array, getting the songs one by one
+
+for(var i = 0; i<CD.length; i++){
+var CDnumber = i+1;
+out += "CD " + CDnumber + " is: '" + CD[i].title + "' by " + CD[i].artist + "\n";}
+</script>
+</head>
+
+<body onload = "alert(out)">
+<h1>Lab 8 Page 2</h1>
+<p>This page will have an alert box that displays the values stored in an object.</p>
+
+
+</body>
+</html>

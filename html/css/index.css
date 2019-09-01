@@ -5,6 +5,9 @@ ul{
 body{
   margin: 0 !important;
   background-image:linear-gradient(to bottom, #555555, #c0c0c0);
+  background-image:url('https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?cs=srgb&dl=blur-books-close-up-159866.jpg&fm=jpg');
+  background-position: center;
+  background-size: cover;
   font-family: colby, sans-serif;
   color: #ffffff;
 
@@ -17,6 +20,7 @@ body{
   border-width: thick;
   border-style: none groove none groove;
   background-color: #33000d;
+  opacity: .9;
 
 }
 

@@ -1,0 +1,88 @@
+ul{
+  list-style-type: square;
+}
+
+body{
+  margin: 0 !important;
+  background-image:linear-gradient(to bottom, #555555, #c0c0c0);
+  font-family: colby, sans-serif;
+  color: #ffffff;
+
+}
+
+ .container{
+  margin-left: 15%;
+  margin-right: 15%;
+  border-color: #303030;
+  border-width: thick;
+  border-style: none groove none groove;
+  background-color: #33000d;
+
+}
+
+
+
+.appName{
+  text-align: center;
+}
+.pageInfo, .data{
+
+  background-image:linear-gradient(to bottom, #003333, rgba(170,170,170,0.5));
+}
+
+.pageInfo{
+  min-height: 3em;
+  text-align: right;
+}
+
+.data{
+  padding: 3% 2% 3% 2%;
+  margin: 10% 0;
+
+}
+
+.game{
+  padding: 3% 2% 3% 2%;
+  margin: 10% 0;
+  background-color: #000000;
+  text-align: center;
+}
+.choices{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+
+.aside{
+  text-align: center;
+  border: solid 3px blue;
+}
+.button{
+  border: solid .1em #ffffff;
+  border-radius: 10%;
+  margin-left: 70%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  text-align: center;
+  background-color: #555555;
+  background-image:url('../images/soloLearn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+#blank{
+  text-decoration: underline;
+  background-color: #555555;
+}
+
+header{
+  margin-top: 0px;
+  margin-bottom: 5%;
+}
+
+
+footer{
+  margin-top: 15%;
+}

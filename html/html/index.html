@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Applications</title>
+  <style type="text/css">
+    @import url('../css/index.css');
+  </style>
+
+  <script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+
+  <script
+src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+  <header class = "pageInfo">Class: Portfolio -------- Professor: Hanks</header>
+
+  <main>
+
+
+      <!--section 1 -->
+      <div class="data" id ="section-1">
+        <h3 class="appName">My Favorite Learning Applications</h3>
+        <p><br /><br /></p>
+        <h3 class="appName">SoloLearn</h3>
+        <p class="appInfo">SoloLearn is an application that was founded in 2013 by Yeva Hyusyan and David Kocharyan. It is an application that was developed to help people learn to code or program. This application has many different languages for the user to study or learn; some of the programming languages include:<br />
+        <ul>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>C++</li>
+          <li>Python</li>
+        </ul>
+        I personally have used this app for about a year now and it has made learning coding languages <mark>MUCH</mark> easier to comprehend. I could not recommend this app enough for anyone who wants an advantage when learning to code. The best part of the app is that it is free! It is also in a fill-in-the-blank format and also features a 'code playground' for people who would like to show off what they have learned to other SoloLearn users. It is set up similar to a social media site like FaceBook or Twitter to where other users can follow you and your progress to learning a language.<br /></p>
+        <!-- Game Button -->
+        <div class="button" id = "gameStart" style="background-image: none;">
+          <p>Click Me For An Example</p>
+        </div>
+
+      </div>
+    <div class="game">
+        <h4>Drag the correct piece of code to complete the line of HTML</h4>
+        <p><br /><br /></p>
+
+        <p>&lth1&gtHello World!<span id="blank">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></p>
+        <div class="choices">
+          <div id="a">
+            <p>&lth5&gt</p>
+          </div>
+
+          <div id="b">
+            <p>&lt/p&gt</p>
+          </div>
+
+          <div id="c">
+            <p>&lt/h1&gt</p>
+          </div>
+
+          <div id="d">
+            <p>&lt/html&gt</p>
+          </div>
+      </div>
+
+    </div>
+
+      <!-- Section 2 -->
+      <div class="data">
+        <h3 class="appName">How To Get Started</h3>
+        <p class="appInfo">To download the app on your phone, go to the app store for your phone, search 'SoloLearn' and it will most likely be the first result in your search. Download the app and then you will be prompted to make an account(don't worry, it is free to sign up). You can then select your language that you wish to study and then cruise your way through the course on that language. Each language course is broken down into different sections that focus on different parts of the language such as variable types, loops, classes, etc. Below is a button that will take you to the homepage of SoloLearn. </p>
+
+        <!-- Link Button -->
+        <div class="button" id = "link">
+          <p>&nbsp&nbsp</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+  </main>
+
+  <footer class = "pageInfo">Created By: Joe Rivera -------- Date Started: 08/29/2019</footer>
+</div>
+
+
+      <script>
+      $('.game').hide();
+      $(function(){
+        $('#gameStart').click(function(){
+          $('#section-1').toggle(2000);
+          $('.game').toggle(2000);
+
+          $('#blank').droppable({
+            accept: "#c",
+            drop: function(){
+              alert('That is the correct answer!');
+            }
+
+          });
+
+          $("#a").draggable({
+            revert: function(){
+              alert('That is incorrect.\nPlease try again');
+              return true;
+            }
+          });
+
+          $("#b").draggable({
+            revert: function(){
+              alert('that is incorrect.\nPlease try again');
+              return true;
+            }
+          });
+
+          //correct one
+          $('#c').draggable();
+
+          $("#d").draggable({
+            revert: function(){
+              alert('that is incorrect.\nPlease try again');
+              return true;
+            }
+          });
+
+
+        });
+
+
+        $('#link').click(function(){
+
+          location.href = "http://www.sololearn.com";
+
+        });
+
+      });
+      </script>
+</body>
+</html>

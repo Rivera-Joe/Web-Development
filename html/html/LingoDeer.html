@@ -7,34 +7,185 @@
   <style type="text/css">
     @import url('../css/index.css');
   </style>
-</head>
-<body>
-  <header class = "pageInfo">Class: Portfolio -------- Professor: Hanks</header>
-  <main>
 
-      <div class="data">
-        <h3>My Favorite Learning Applications</h3>
-        <p><br /></p>
-        <h3 class="appName">LingoDeer</h3>
-        <p class="appInfo">LingoDeer is an application, focused on learning spoken and written language, that was released on September 8, 2017. LingoDeer features many languages that can be learned by the users of this app. Some examples of the taught languages include:<br />
-        <ul>
-          <li>English</li>
-          <li>Spanish</li>
-          <li>Korean</li>
-          <li>Mandarin</li>
-          <li>German</li>
-        </ul>
-        LingoDeer uses a different approach to teaching a language than what I would assume most other language learning apps or sites use. LD is set up similar to what you would see in SoloLearn(possibly why I am so biased towards it), in that it uses a fill-in-the-blank approach. The app breaks each language down into smaller sections focusing on topics such as colors, verbs, adjectives, nouns, etc. Each topic is held in a list that users will work their way through to achieve the level of fluency that they desire. After a few sections, there is a quiz based on the past few sections to help reinforce what the user has learned. There is even a story that further teaches a section. This portion is optional, but I would recommend that anyone using the application should participate in the story, as it will often teach extra words or phrases that were not mentioned in the section that the story revolves around.</p>
-        <div class="button">
-          <p><a href="https://www.sololearn.com">SoloLearn</a></p>
+
+  <script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+
+  <script
+src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+crossorigin="anonymous"></script>
+</head>
+<body id="L-Body">
+  <header class = "pageInfo-L">Class: Portfolio -------- Professor: Hanks</header>
+  <main>
+    <div class="wrapper">
+
+
+            <div id="box-1">
+                <h3>My Favorite Learning Applications</h3>
+                <p><br /></p>
+                <h3 class="appName-L">LingoDeer</h3>
+                <p class="appInfo-L">LingoDeer is an application, focused on learning spoken and written language, that was released on September 8, 2017. LingoDeer features many languages that can be learned by the users of this app. Some examples of the taught languages include:<br />
+                <ul>
+                  <li>English</li>
+                  <li>Spanish</li>
+                  <li>Korean</li>
+                  <li>Mandarin</li>
+                  <li>German</li>
+                </ul>
+                This app uses a different approach to teaching a language than what I would assume most other language learning apps or sites use. LD is set up similar to what you would see in SoloLearn(possibly why I am so biased towards it), in that it uses a fill-in-the-blank approach. The app breaks each language down into smaller sections focusing on topics such as colors, verbs, adjectives, nouns, etc. Each topic is held in a list that users will work their way through to achieve the level of fluency that they desire. After a few sections, there is a quiz based on the past few sections to help reinforce what the user has learned. There is even a story that further teaches a section. This portion is optional, but I would recommend that anyone using the application should participate in the story, as it will often teach extra words or phrases that were not mentioned in the section that the story revolves around.<br /><br />
+                Click the button directly below to go to the LingoDeer Website.</p>
+                <div class="button-L">
+                  <p>LingoDeer</p>
+                </div>
+            </div>
+              <aside id="box-2" class="nest">
+
+                <h4 id="a-head">Other Learning Apps</h4>
+                <div id="tynker"></div>
+
+                <div id="duoLingo"></div>
+
+                <div id="coursera"></div>
+
+                <div id="Khan"></div>
+
+                <div id="PhotoMath"></div>
+
+                <div id="udemy"></div>
+              </aside>
+              <div id="box-3">
+                  <h4>Drag the correct word to complete the sentence</h4>
+                  <p><br /><br /></p>
+
+                  <p>The <span id="blank">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span> brown fox jumped over the lazy dog.</p>
+                  <div class="choices">
+                    <div id="a">
+                      <p>bear</p>
+                    </div>
+
+                    <div id="b">
+                      <p>cat</p>
+                    </div>
+
+                    <div id="c">
+                      <p>door</p>
+                    </div>
+
+                    <div id="d">
+                      <p>quick</p>
+                    </div>
+                </div>
+
+              </div>
+
+
         </div>
-      </div>
-      <div class="aside">
-        <aside></aside>
-      </div>
+        <div id="tabs">
+
+          <div class="Solo">
+            <p>SoloLearn</p>
+          </div>
+
+          <div class="Lingo">
+            <p>LingoDeer</p>
+          </div>
+
+        </div>
 
   </main>
 
-  <footer class = "pageInfo">Created By: Joe Rivera --------- Date Started: 08/29/2019</footer>
+  <footer class = "pageInfo-L">Created By: Joe Rivera --------- Date Started: 08/29/2019</footer>
+
+  <script>
+
+  $(function(){
+    $('.Solo').click(function(){
+      location.href="./index.html";
+    });
+
+    $('.Lingo').click(function(){
+      location.href="#";
+    });
+
+    $('.button-L').click(function(){
+      location.href="https://www.lingodeer.com/";
+    });
+
+    $('#tynker').click(function(){
+      location.href="https://www.tynker.com/";
+    });
+
+    $('#duoLingo').click(function(){
+      location.href="https://www.duolingo.com/";
+    });
+
+    $('#coursera').click(function(){
+      location.href="https://www.coursera.org/";
+    });
+
+    $('#Khan').click(function(){
+      location.href="https://www.khanacademy.org/";
+    });
+
+    $('#PhotoMath').click(function(){
+      location.href="https://www.photomath.net/";
+    });
+
+    $('#udemy').click(function(){
+      location.href="https://www.udemy.com/";
+    });
+
+
+
+    $('#blank').droppable({
+      accept: "#d",
+      drop: function(){
+        alert('That is the correct answer!');
+      }
+
+    });
+
+    $("#a").draggable({
+      revert: function(){
+        alert('That is incorrect.\nPlease try again');
+        return true;
+      }
+    });
+
+    $("#b").draggable({
+      revert: function(){
+        alert('That is incorrect.\nPlease try again');
+        return true;
+      }
+    });
+
+    //correct one
+    $('#c').draggable({
+      revert: function(){
+        alert('That is incorrect.\nPlease try again');
+        return true;
+      }
+    });
+
+    $("#d").draggable({
+      revert: true
+    });
+
+
+  });
+
+
+
+
+
+
+
+
+  </script>
 </body>
 </html>

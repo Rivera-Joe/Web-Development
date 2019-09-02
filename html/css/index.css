@@ -114,21 +114,27 @@ ul{
 
 .wrapper > div{
   border: #333333 .4em solid;
+  padding: 1em;
 }
 
 #box-1{
   grid-column: 1/4;
-  background-image: linear-gradient(to bottom, #0022ff, #00ffcc);
+
+  background-image: linear-gradient(to bottom, #0011ee, #006560);
+  /* background-image: linear-gradient(to top, #543312, #ff9933); */
   border: #333333 .4em solid;
+  /* border: #663300 .4em solid; */
 
 
 }
 
 #box-2{
   grid-column: 4/5;
-  background-image: linear-gradient(to bottom, #0022ff, #00ffcc);
+  /* background-image: linear-gradient(to top, #543312, #ff9933); */
+  background-image: linear-gradient(to bottom, #0011ee, #006560);
   text-align: center;
   border: #333333 .4em solid;
+  /* border: #663300 .4em solid; */
 
 }
 
@@ -197,7 +203,10 @@ ul{
 
   background-image: linear-gradient(to bottom , #555555, #dddddd);
 
-    font-family: "cooper black", serif;
+    font-family: garamond;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #dddddd;
 }
 
 
@@ -211,7 +220,8 @@ ul{
 
 }
 .button-L:hover{
-  background-color: #c0c0c0;
+  background-color: #996600;
+  border-color: #663300;
 }
 
 

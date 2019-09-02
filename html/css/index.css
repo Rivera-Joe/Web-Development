@@ -30,13 +30,17 @@ ul{
 
 }
 
-#tabs div{
+#tabs > div{
   text-align: center;
   color: #ffffff;
   line-height: 3;
   border: inset medium #555555;
   background-color: #22000c;
   min-height: 75px;
+}
+
+#tabs > div:hover{
+  background-color: #66000f;
 }
 
 #section-1{
@@ -114,7 +118,7 @@ ul{
 
 #box-1{
   grid-column: 1/4;
-  background-image: linear-gradient(to bottom right, #996600, #c0c0c0);
+  background-image: linear-gradient(to bottom, #0022ff, #00ffcc);
   border: #333333 .4em solid;
 
 
@@ -122,7 +126,7 @@ ul{
 
 #box-2{
   grid-column: 4/5;
-  background-image: linear-gradient(to bottom right, #996600, #c0c0c0);
+  background-image: linear-gradient(to bottom, #0022ff, #00ffcc);
   text-align: center;
   border: #333333 .4em solid;
 
@@ -189,7 +193,9 @@ ul{
 
 
 #L-Body{
-  background-image: linear-gradient(to top left, #663300, #555555);
+  /* background-image: linear-gradient(to top left, #663300, #555555); */
+
+  background-image: linear-gradient(to bottom , #555555, #dddddd);
 
     font-family: "cooper black", serif;
 }
@@ -199,10 +205,13 @@ ul{
 .button-L{
   background-color: #555555;
   max-width:5.5em;
-  border: #441100 .4em solid;
+  border: #555555 .4em solid;
   text-align: center;
   margin: 1em;
 
+}
+.button-L:hover{
+  background-color: #c0c0c0;
 }
 
 

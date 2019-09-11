@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How To: ICOCA</title>
+  <style type = "text/css">
+    @import url('../css/index.css');
+  </style>
+</head>
+<body>
+  
+
+    <div class="pageEnds" id="top">
+      <header>Class: Mobile Apps ----  Start Date: 08/29/2019</header>
+      <h2 class="intro">An In Detail Guide on How to Obtain and Use ICOCA Cards</h2>
+    </div>
+
+  
+    
+    
+      <nav id="navBar">
+        
+        <ul>
+          <li id="insideOsaka" onclick='pageChange("insideOsaka")'>Inside Osaka</li>
+          <li id="westJR" onclick='pageChange("westJR")'>West<br />JR</li>
+          <li id="flashPack" onclick='pageChange("flashPack")'>Flash Packing</li>
+        </ul>
+
+      </nav>
+    
+
+    <div class="data">
+
+
+      <main id="main">
+        <section id="WhatIsAnIcocaCard">
+          <h2 class="intro">What is an ICOCA Card?</h2>
+          <p>There are debit cards that can be purchased at most train stations in Japan. In West Japan, the cards primarily sold are ICOCA cards, and in the East: SUICA. These cards are one of the most important and useful things that you can buy once you get to Japan. This page will primarily cover all things about the ICOCA cards, but the same things can be said about how to get and use SUICA cards since they are basically the same.</p>
+        </section>
+
+        <section id="HowToGetIcoca">
+          <h2 class="intro">How To Get An ICOCA Card</h2>
+          <p>
+            Once you get to a train station in Japan, Walk towards the center of the train station. Generally, train stations will have a section walled off that contains what looks like 4-5 different ATM's side by side. These are the machines that can be used to buy train tickets as well as ICOCA cards.<br />
+            <mark>A picture of an ICOCA card will be displayed on the machine that you can purchase the card from.</mark><br />There are instructions for how to use the machine; this page will further explain those instructions. These machines are also touch-screen, so when the word 'select' is used, simply tap on the picture that corresponds with what is needed.<br /><br />After you have made your way to the machine, you can obtain your very own card by following these steps:<br />
+          <ul>
+            <li>Select your spoken language on the machine</li>
+            <li>Select the ICOCA button</li>
+            <li>Designate the amount of money to put on your card</li>
+            <li>Insert the chosen amount into the machine</li>
+            <li>The vending machine will dispense your card</li>
+            <li>Take any and all remaining receipts and change</li>
+          </ul>
+          <br />
+          </p>
+        </section>
+
+          <!-- Article -->
+          <article>
+            <p>
+              <span style="font-weight: bolder; text-decoration: underline">Note:</span><br />There is a 500 yen deposit for ICOCA Cards. Also, these cards cannot be purchased with credit cards. They must be bought with cash.
+            </p>
+          </article>
+          <p><br /><br /></p>
+
+          
+
+          
+          <!-- place video here with fig -->
+          <div class="video">
+            <h4>This video was uploaded on <time datetime="2015-01-08">January 8, 2015</time>.</h4>
+            
+            <iframe width="893" height="502" src="https://www.youtube.com/embed/u3KoM13SfWY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <details>
+              <summary>How to Buy and Re-load an ICOCA Card</summary>
+
+              <p>This video shows how to buy an ICOCA card and then re-load it with money. There are also written directions that go along with the video.</p>
+            </details>
+
+            <p><br /></p>
+            <div class="picture">
+              <figure>
+               <img src="../images/icoca-machine.jpg" height="310px" width="500px" alt="Icoca Machine">
+               <figcaption>A machine used to purchase ICOCA cards</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          
+
+
+       
+
+        
+
+
+
+
+      </main>
+      <p><br /><br /></p>
+
+        <button onclick='location.href="./page2.html"'><p>How To Use The ICOCA Card</p></button>
+
+    
+    </div>
+   
+    
+      <aside id="aside">
+        <ul>
+          <li id="suica" onclick='pageChange("suica")'>Suica</li>
+          <li id="pasmo" onclick='pageChange("pasmo")'>Pasmo</li>
+        </ul>
+
+
+      </aside>
+
+    
+
+  
+
+
+
+
+    <div class="pageEnds" id="bot">
+
+      <footer>Page Created by: Joe Rivera</footer>
+    </div>
+
+
+</body>
+<script>
+  // document.getElementById('insideOsaka').onclick=function()
+  // {
+  //   location.href = "https://insideosaka.com/prepaid-cards-icoca-suica-and-pasmo/";
+  // };
+  function pageChange(id){
+    switch (id) {
+      case 'insideOsaka':
+        location.href='https://insideosaka.com/prepaid-cards-icoca-suica-and-pasmo/';
+        break;
+
+      case 'westJR':
+        location.href="https://www.westjr.co.jp/global/en/ticket/icoca-haruka/";
+        break;
+
+      case 'flashPack':
+        location.href="https://www.flashpackingjapan.com/icoca-card-kyoto/";
+        break;
+
+      case 'suica':
+        location.href="https://www.jreast.co.jp/e/pass/suica.html";
+        break;
+
+      case 'pasmo':
+        location.href="https://www.pasmo.co.jp/visitors/en/normalpasmo/";
+        break;
+
+      default:
+        alert('something not good happened');
+        break;
+
+    }
+
+  }
+</script>
+
+
+</html>

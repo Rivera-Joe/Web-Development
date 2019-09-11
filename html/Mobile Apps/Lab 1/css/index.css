@@ -1,0 +1,154 @@
+/* /* top of page to be white background
+  nav and aside bars will be dark grey
+  middle section will be a lighter grey
+  borders will be red */
+/*body{
+  font-family: verdana;
+  color: #ffffff;
+  background-color: #cccccc;
+}
+.pageEnds{
+  text-align: right;
+  min-height: 100px;
+  color: #333333;
+}
+.intro{
+  text-align: center;
+  color: #00ffcc;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: .5em;
+}
+.data{
+  padding: 1.5em;
+  background-color: #333333;
+}
+#middle{
+  background-color: #777777;
+}
+#left{
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.container > div{
+  border: 0.2em solid #0000cc;
+}
+#nav > div:hover{
+  background-color: #c0c0c0;
+}
+#nav > div{
+  line-height: 2em;
+  text-align: center;
+  border-top-style: solid;
+  border-bottom-style: solid;
+} */
+
+body{
+  background-color:#ffff99;
+  margin: 0;
+  font-size: 20px;
+  font-family: verdana;
+}
+.pageEnds{
+  text-align: center;
+
+}
+section{
+  margin-top: 2em;
+  padding: 1em;
+  border: 3px inset #0000ff;
+  background-color: #c0c0c0;
+}
+
+.data{
+  padding: 1.5em;
+
+}
+
+.picture{
+  margin-left: -4%;
+}
+/* nav bar */
+#navBar{
+  width: 100%;
+  background-color: #555555;
+  text-align: center;
+  height: 4em;
+  overflow:hidden;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+#navBar ul{
+  list-style-type: none;
+  display: inline;
+
+}
+
+#navBar ul li{
+  float: left;
+  width: 10%;
+  height: 100%;
+  padding-top: 15px;
+  border-right: 3px solid #c0c0c0;
+}
+
+#navBar ul li:hover{
+  background-color: #333333;
+}
+
+
+/* aside */
+#aside{
+  width: 100%;
+  background-color: #555555;
+  text-align: center;
+  height: 4em;
+  overflow:hidden;
+  color: #ffffff;
+}
+
+#aside ul{
+  list-style-type: none;
+  display: inline;
+
+}
+
+#aside ul li{
+  float: left;
+  width: 10%;
+  height: 100%;
+  padding-top: 20px;
+  border-right: 3px solid #c0c0c0;
+ 
+}
+#aside ul li:hover{
+  background-color: #333333;
+}
+
+.video{
+  margin: auto;
+  width: 50%;
+  background-image: linear-gradient(to top, #c0c0c0, #3399ff);
+  padding: 1em;
+  border: 3px inset #0000ff;
+}
+
+button{
+  background-color: #3399ff;
+  border: 3px inset #0000ff;
+
+}
+
+button:hover{
+  background-color: #0000ff;
+  border: 3px outset #555555;
+}
+button p{
+  font-weight: bold;
+  color: #ffffff;
+}

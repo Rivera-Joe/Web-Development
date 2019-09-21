@@ -41,6 +41,42 @@ nav > div:hover{
     color: #333333;
 }
 
+#languages{
+
+    display: inline-block;
+    z-index: 0;
+
+}
+#drop{
+    display:none;
+    border-top: 1px solid #000000;
+    position: absolute;
+    background-color: #cccccc;
+    color: #333333;
+    width: 10.8em;
+    margin-top: 1em;
+    margin-left: -.95em;
+    box-shadow: 0 10px 10px 0 #000000;
+}
+
+
+#drop p{
+    padding: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+
+#drop > p:hover{
+    background-color: #777777;
+    color: #f0f0f0;
+}
+
+#languages:hover #drop{
+    display: block; 
+
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -78,13 +114,12 @@ img{
     color: #f0f0f0;
 }
 
-/* footer{
-    display: block;
-    margin-top: 1.2em;
-    padding: 1em;
-    text-align: center;
-    background-color: #777777;
-    color: #f0f0f0;
-    min-width: 100%;
+/* form page */
 
-} */
+#form{
+    padding: 1em;
+}
+
+form > p{
+    margin-top: 1.5em;
+}

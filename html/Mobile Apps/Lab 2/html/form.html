@@ -8,6 +8,12 @@
 
     <style>
         @import url('../css/MA2.css');
+
+        .pInfo{
+            text-align: center;
+        }
+
+        
     </style>
 
     <script src="../javascript/main.js"></script>
@@ -20,22 +26,22 @@
         </div>
     </nav>
 
-    <h1>User's Personal Information</h1>
-    <p>Please fill out the form below to the best of your abilities.<br /><br /></p>
+    <h1 class="pInfo">User's Personal Information</h1>
+    <p class="pInfo">Please fill out the form below to the best of your abilities.<br /><br /></p>
 
         <div id="form">
-            <form>
+            <form action="./userPage.html" onsubmit="save()">
 
                 <p>First Name:</p>
-                <input type="text" name="First-Name"/>
+                <input type="text" name="First-Name" id="fName"/>
 
                 <p>Last Name:</p>
-                <input type="text" name="Last-Name"/>
+                <input type="text" name="Last-Name" id='lName'/>
                 <p>Favorite Color:</p>
-                <input type="color" name="color"/>
+                <input type="color" name="color" id='color'/>
 
                 <p>Birth Date:</p>
-                <input type="date" name="Birth Day"/>
+                <input type="date" name="Birth Day" id='bDay'/>
 
                 <p>Month / Year of Form Completion:</p>
                 <input type="month" name="Form-Month"/>
@@ -54,6 +60,31 @@
 
                 <p>Current Telephone Number:</p>
                 <input type="tel" name="phone"/>
+
+                <p>Estimated number of hours to study each week:</p>
+                <p id="output" style="padding-left: 4.8em"></p>
+                <p>1 <input type="range" id = 'slider' name="StudyHours" min='1' max='10' value='5' oninput="showValue()"/> 10</p>
+
+                <p>Number of tutor sessions per week:</p>
+                <input type="number" name="Sessions"/>
+
+                <p>Most visited website for tutorials:</p>
+                <input type="url" name="tutialSite"/>
+
+                <p>Preferred tutor:</p>
+                <select name="tutor" id="tutor">
+                    <option value="ProfessorX">Professor X</option>
+
+                    <option value="JamesBond">James Bond</option>
+
+                    <option value="AustinP">Austin Powers</option>
+
+                    <option value="LtDan">Lieutenant Dan</option>
+                </select>
+
+                <p><br /></p>
+                <input type="reset"/>
+                <input type="submit"/>
 
 
 

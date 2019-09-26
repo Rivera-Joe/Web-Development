@@ -18,19 +18,28 @@
 
     <script src="../javascript/main.js"></script>
 </head>
-<body>
-    <header><p>Mobile Apps</p></header>
+<body onload = 'hideUserData()'>
+    <header class="pInfo"><p>Mobile Apps</p></header>
     <nav>
         <div id="home" onclick="pageChange('home')">
             <p>Home</p>
         </div>
     </nav>
 
-    <h1 class="pInfo">User's Personal Information</h1>
-    <p class="pInfo">Please fill out the form below to the best of your abilities.<br /><br /></p>
+    <div class="user">
 
-        <div id="form">
-            <form action="./userPage.html" onsubmit="save()">
+        <h1 class="pInfo" id="label">User's Personal Information</h1>
+        <p class="pInfo" id='firstLine'>Please fill out the form below to the best of your abilities.<br /><br /></p>
+        
+        <p id="userAlert">Page has been modified to reflect user's input</p>
+    </div>
+    
+        
+
+        
+
+        <div class="formStuff">
+            <form onsubmit="event.preventDefault(); setup();" id="form">
 
                 <p>First Name:</p>
                 <input type="text" name="First-Name" id="fName"/>

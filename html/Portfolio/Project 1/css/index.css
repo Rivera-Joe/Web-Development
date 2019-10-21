@@ -10,6 +10,7 @@ ul{
   background-size: cover;
   font-family: colby, sans-serif;
   color: #ffffff;
+  font-size: 1.1em;
 
 }
 
@@ -24,23 +25,17 @@ ul{
 
 }
 
-#tabs{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
 
-}
-
-#tabs > div{
+#Lingo{
+  border: .1em solid #fff;
+  border-radius: 10%;
+  margin-bottom: 1em;
+  margin-top: 5em;
+  margin-left: 70%;
+  width: 15%;
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: center;
-  color: #ffffff;
-  line-height: 3;
-  border: inset medium #555555;
-  background-color: #22000c;
-  min-height: 75px;
-}
-
-#tabs > div:hover{
-  background-color: #66000f;
 }
 
 #section-1{
@@ -62,8 +57,8 @@ ul{
 }
 
 .data{
-  padding: 3% 2% 3% 2%;
-  margin-top: 10%;
+  padding: 2%;
+  margin-top: 5%;
 
 }
 
@@ -89,15 +84,27 @@ ul{
   margin-right: 10%;
   margin-bottom: 3%;
   text-align: center;
-  background-color: #555555;
+  background-color: #777777;
   background-image:url('../images/soloLearn.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center;
 }
+.button:hover{
+  cursor: pointer;
+  background-color: #555555;
+}
 #blank{
   text-decoration: underline;
   background-color: #555555;
+}
+#h-Solo{
+  margin-top: 0px;
+}
+
+
+#f-Solo{
+  margin-top: 5%;
 }
 
 /*-----------------page 2 css--------------*/
@@ -120,7 +127,7 @@ ul{
 #box-1{
   grid-column: 1/4;
 
-  background-image: linear-gradient(to bottom, #0011ee, #006560);
+  background-image: linear-gradient(to bottom, #003333, rgba(40,0,12, 0.6));
   /* background-image: linear-gradient(to top, #543312, #ff9933); */
   border: #333333 .4em solid;
   /* border: #663300 .4em solid; */
@@ -131,7 +138,7 @@ ul{
 #box-2{
   grid-column: 4/5;
   /* background-image: linear-gradient(to top, #543312, #ff9933); */
-  background-image: linear-gradient(to bottom, #0011ee, #006560);
+  background-image: linear-gradient(to bottom, #003333, rgba(40,0,12,0.6));
   text-align: center;
   border: #333333 .4em solid;
   /* border: #663300 .4em solid; */
@@ -220,8 +227,8 @@ ul{
 
 }
 .button-L:hover{
-  background-color: #996600;
-  border-color: #663300;
+  border-color: #003333;
+
 }
 
 
@@ -230,11 +237,3 @@ ul{
 
 
 
-#h-Solo{
-  margin-top: 0px;
-}
-
-
-#f-Solo{
-  margin-top: 15%;
-}

@@ -21,24 +21,15 @@ crossorigin="anonymous"></script>
 <body id = "SoloPage">
 <div class="container">
   <header class = "pageInfo" id ="h-Solo">Class: Portfolio -------- Professor: Hanks</header>
-    <nav>
-      <div id="tabs">
-        <div id="Solo">
-          <p>SoloLearn Page</p>
-        </div>
 
-        <div id="Lingo">
-          <p>LingoDeer Page</p>
-        </div>
-      </div>
-    </nav>
+   
 
   <main>
 
 
       <!--section 1 -->
-      <div class="data" id ="section-1">
-        <h3 class="appName">My Favorite Learning Applications</h3>
+      <div class="data" id ="section-1" style="margin-top: 3em">
+        
         <p><br /><br /></p>
         <h3 class="appName">SoloLearn</h3>
         <p class="appInfo">SoloLearn is an application that was founded in 2013 by Yeva Hyusyan and David Kocharyan. It is an application that was developed to help people learn to code or program. This application has many different languages for the user to study or learn; some of the programming languages include:<br />
@@ -96,6 +87,10 @@ crossorigin="anonymous"></script>
 
 
 
+      <aside class='data'>
+        <p class='appInfo' style='margin-left: 5em;'>Another great learning app is LingoDeer. It's primary focus is spoken and written languages. To learn more about it, click the button below.</p>
+        <div id="Lingo" class='button' style="background-image: none;">LingoDeer Page
+      </aside>
 
 
   </main>
@@ -130,6 +125,7 @@ crossorigin="anonymous"></script>
 
               $('#section-1').toggle(2000);
               $('.button').toggle();
+              $('#link').toggle();
 
             }
 
@@ -170,7 +166,7 @@ crossorigin="anonymous"></script>
         });
 
         $('#Solo').click(function(){
-          location.href= "./index.html";
+          location.href= "./SoloLearn.html";
         });
 
 

@@ -221,7 +221,7 @@ ul{
 .button-L{
   background-color: #555555;
   max-width:5.5em;
-  border: #555555 .4em solid;
+  border: #333 .4em solid;
   text-align: center;
   margin: 1em;
 
@@ -229,6 +229,14 @@ ul{
 .button-L:hover{
   border-color: #003333;
 
+}
+
+.pageInfo-L{
+  text-align: right;
+}
+
+#L-Body > footer{
+  color: #333;
 }
 
 
